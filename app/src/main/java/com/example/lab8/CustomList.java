@@ -66,4 +66,8 @@ public class CustomList extends ArrayAdapter<City> {
     public void deleteCity(City city) {
         this.cities.remove(city);
     }
+
+
+    public int countCities() {
+    }
 }

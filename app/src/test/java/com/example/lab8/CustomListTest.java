@@ -48,11 +48,18 @@ public class CustomListTest {
     }
 
     @Test
-    void delteCity(){
+    void deleteCity(){
         CustomList cityList = MockCityList();
         City city = new City("Regina", "Saskatchewan");
         cityList.addCity(city);
         cityList.deleteCity(city);
         assertFalse(cityList.hasCity(city));
+    }
+
+    @Test
+    void countCity(){
+        CustomList cityList = MockCityList();
+        City city = new City("Regina", "Saskatchewan");
+        assertFalse(cityList.countCities() == 1);
     }
 }
